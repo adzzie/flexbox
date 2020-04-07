@@ -6,27 +6,62 @@
     <title>Flexbox</title>
     <style>
         .container{
-    width: 600px;
-    border: 5px solid #333;
-    margin: 30px auto;
-    padding: 5px;
-    box-sizing: border-box;
-    display: flex;
-    /* untuk mengatur arah dan urutan di dalam container. urutan terbalik row-reverse dan ada jg unutk column tp defaultnya row aja*/
-    flex-direction: row-reverse;  
+            width: 600px;
+            border: 5px solid #333;
+            margin: 30px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            /* untuk mengatur arah dan urutan di dalam container. urutan terbalik row-reverse dan ada jg unutk column tp defaultnya row aja*/
+            flex-direction: row;  
 
-}
+        }
 
-.container div {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(19, 133, 255);
-    margin: 2px;
-}
+        .container.cr-reverse{
+            /* untuk mengatur arah dan urutan di dalam container. urutan terbalik row-reverse dan ada jg unutk column tp defaultnya row aja*/
+            flex-direction: row-reverse;
+        }
+        .container.cc{
+            /* untuk mengatur arah dan urutan di dalam container. urutan terbalik row-reverse dan ada jg unutk column tp defaultnya row aja*/
+            flex-direction: column;
+        }
+        .container.cc-reverse{
+            /* untuk mengatur arah dan urutan di dalam container. urutan terbalik row-reverse dan ada jg unutk column tp defaultnya row aja*/
+            flex-direction: column-reverse;
+        }
+
+        .container div {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(19, 133, 255);
+            margin: 2px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div><h3>flex-direction: row</h3></div>
+    <div class="container cr">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>flex-direction: row-reverse</h3></div>
+    <div class="container cr-reverse">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>flex-direction: column</h3></div>
+    <div class="container cc">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>flex-direction: column-reverse</h3></div>
+    <div class="container cc-reverse">
         <div class="satu">1</div>
         <div class="dua">2</div>
         <div class="tiga">3</div>
