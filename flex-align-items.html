@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 600px;
+            border: 5px solid #333;
+            margin: 30px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;  
+            /* untuk memindahkan items ke baris di bawahnya, secara default semua item di dalam satu baris */
+            flex-wrap: wrap;
+            /* unutk mengatur kesejajaran secara vertical */
+            align-items: flex-start;
+           
+        }
+
+        .container.f-end {
+            /* unutk mengatur kesejajaran secara vertical */
+            align-items: flex-end;
+        }
+        .container.cntr {
+            /* unutk mengatur kesejajaran secara vertical */
+            align-items: center;
+        }
+        .container.strech {
+            /* unutk mengatur kesejajaran secara vertical */
+            align-items: stretch;
+        }
+        .container.bline {
+            /* unutk mengatur kesejajaran secara vertical */
+            align-items: baseline;
+        }
+        .container div.tiga {
+            font-size: 50px;
+        }
+        .container div.dua {
+            height: 50px;
+        }
+
+        .container div {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(19, 133, 255);
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div><h3>align-items: flex-start</h3></div>
+    <div class="container f-start">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+    </div>
+    <div><h3>align-items: flex-end</h3></div>
+    <div class="container f-end">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+    </div>
+    <div><h3>align-items: center</h3></div>
+    <div class="container cntr">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+    </div>
+    <div><h3>align-items: stretch</h3></div>
+    <div class="container strech">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+    </div>
+    <div><h3>align-items: baseline</h3></div>
+    <div class="container bline">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+    </div>
+</body>
+</html>
