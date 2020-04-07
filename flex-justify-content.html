@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            width: 600px;
+            border: 5px solid #333;
+            margin: 30px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;  
+            /* untuk memindahkan items ke baris di bawahnya, secara default semua item di dalam satu baris */
+            flex-wrap: wrap;
+        }
+
+        .container.f-start {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: flex-start;
+        }
+        .container.f-end {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: flex-end;
+        }
+        .container.cntr {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: center;
+        }
+        .container.s-between {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: space-between;
+        }
+        .container.s-around {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: space-around;
+        }
+        .container.s-evenly {
+            /* untuk mengatur rata dari tiap items */
+            justify-content: space-evenly;
+        }
+
+        .container div {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(19, 133, 255);
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div><h3>justify-content: -</h3></div>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: flex-start</h3></div>
+    <div class="container f-start">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: flex-end</h3></div>
+    <div class="container f-end">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: center</h3></div>
+    <div class="container cntr">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: space-between</h3></div>
+    <div class="container s-between">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: spece-around</h3></div>
+    <div class="container s-around">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+    <div><h3>justify-content: space-evenly</h3></div>
+    <div class="container s-evenly">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">4</div>
+    </div>
+</body>
+</html>
