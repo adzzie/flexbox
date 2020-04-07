@@ -13,6 +13,11 @@
     box-sizing: border-box;
     display: flex;  
     /* untuk memindahkan items ke baris di bawahnya, secara default semua item di dalam satu baris */
+    flex-wrap: nowrap;
+}
+
+.container.w{
+    /* untuk memindahkan items ke baris di bawahnya, secara default semua item di dalam satu baris */
     flex-wrap: wrap;
 }
 
@@ -25,14 +30,23 @@
     </style>
 </head>
 <body>
+    <div><h3>flex-wrap: nowrap</h3></div>
     <div class="container">
         <div class="satu">1</div>
         <div class="dua">2</div>
         <div class="tiga">3</div>
         <div class="empat">4</div>
         <div class="lima">5</div>
+        <div class="enam">6</div>
+    </div>
+    <div><h3>flex-wrap: wrap</h3></div>
+    <div class="container w">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
         <div class="lima">5</div>
-        <div class="lima">5</div>
+        <div class="enam">6</div>
     </div>
 </body>
 </html>
